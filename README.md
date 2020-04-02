@@ -16,6 +16,7 @@ Please refer to the [R script](Model.R).
 * The slope (rate of change) of the new cases per day in Stage 1 and Stage 2 correlates well with the slope at the inflection point (the date when the growth rate starts slowing down). The R values are 0.93 and 0.94, correspondingly.
 * There is a low negative correlation (R = -0.41) between the steepness of the logistic curve and the earliness of starting Stage 1.
 * Other variables do not correlate well with each other. However, it seems that the time between the inflection point and Stage 1 usually is 8-13 days, and the time between the inflection point and Stage 2 is roughly 0-6 days.
+* According some deviation, the slope of the inflection point * 4 = the curve's maximum value * steepness.
 
 #### An Inaccurate Estimation
 We then fit the VIC data (from Mar 4 to Mar 31) into the model. Stage 1 date was not used, and Stage 2 mentioned previously was fitted using the time of Stage 3 in VIC, where staying at home was enforced. The models predict the curve below.
